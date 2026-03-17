@@ -21,6 +21,8 @@ func main() {
   }
   
   app := echo.New()
+
+  app.Static("/public", "/public")
   
   h := handlers.NewAppHandler(db)
 
